@@ -1,0 +1,71 @@
+$color-primary: #436850;
+$color-secondary: #ADBC9F;
+$text-primary: #12372A;
+$text-secondary: #FBFADA;
+
+$text-size-26: 1.625rem;
+$text-size-18: 1.125rem;
+
+.container {
+	margin: 0 83px;
+}
+.shadow {
+	filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+}
+.section-title {
+	color: $color-primary;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 36px;
+}
+
+.color-primary {
+	color: $color-primary;
+}
+.color-secondary {
+	color: $color-secondary;
+}
+.text-primary {
+	color: $text-primary;
+}
+.text-secondary {
+	color: $text-secondary;
+}
+
+.skip-link {
+	position: absolute;
+	top: -80px;
+	left: 0px;
+	background-color: $color-primary;
+	color: #fff;
+	z-index: 100;
+	padding: 20px 10px;
+	border: 1px solid $text-primary;
+}
+
+.skip-link:focus {
+	top: 0px;
+}
+
+body {
+	:focus-visible {
+		border-radius: 5px;
+	}
+	nav {
+		:focus {
+			border: 2px solid $text-primary;
+		}
+		button.hamburger {
+			&:focus {
+				border: 1px solid $color-primary;
+				transition: transform 0.3s ease-in-out;
+			}
+		}
+	}
+	main,
+	footer {
+		:focus-visible {
+			border: 2px solid $color-primary;
+		}
+	}
+}
