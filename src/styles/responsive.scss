@@ -6,7 +6,7 @@
 	* {
 		font-family: 'Poppins', sans-serif;
 	}
-	
+
 	.container {
 		margin: 0 2rem;
 	}
@@ -24,6 +24,7 @@
 			width: 100%;
 			height: 80px;
 			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+			background-color: #edff00;
 
 			nav {
 				&.container {
@@ -137,17 +138,6 @@
 					height: 100%;
 				}
 
-				div.gradient {
-					position: absolute;
-					width: 100%;
-					height: 550px;
-					background: linear-gradient(
-						to left,
-						rgba(196, 196, 196, 0.3) 0%,
-						rgba(0, 0, 0, 0.5) 100%
-					);
-				}
-
 				div.text-wrapper {
 					position: absolute;
 					margin-top: -28rem;
@@ -155,7 +145,7 @@
 					flex-direction: column;
 					width: -webkit-fill-available;
 					text-align: center;
-					background-color: rgba(196, 196, 196, 0.3);
+					background-color: rgba(196, 196, 196, 0.5);
 					padding: 32px;
 					h1 {
 						color: #fff;
@@ -291,14 +281,10 @@
 					transform: none;
 					width: 250px;
 					z-index: 2;
-
 					padding: 20px;
 					border-radius: 0 0 15px 15px;
-
 					opacity: 1;
 					background: none;
-					z-index: 2;
-
 					display: flex;
 					flex-direction: row;
 					justify-content: end;
@@ -383,7 +369,6 @@
 		header {
 			nav {
 				all: initial;
-
 				height: 100%;
 				width: initial;
 				display: flex;

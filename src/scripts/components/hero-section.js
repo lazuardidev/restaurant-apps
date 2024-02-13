@@ -7,7 +7,6 @@ class HeroSection extends HTMLElement {
     this.innerHTML = `
     <div class="hero">
       <div class="img-wrapper">
-        <div class="gradient"></div>
         <img src="./images/heros/hero-image_4.jpg" alt="Hero Image" loading="lazy" />
         <div class="text-wrapper container">
           <div class="text">
