@@ -13,7 +13,7 @@ class Navbar extends HTMLElement {
           </button>
           <ul class="nav_list">
             <li class="nav_item active"><a href="/">Home</a></li>
-            <li class="nav_item"><a href="#">Favorite</a></li>
+            <li class="nav_item"><a href="#/favorite">Favorite</a></li>
             <li class="nav_item">
               <a href="https://github.com/lazuardidev" target="_blank">About Us</a>
             </li>

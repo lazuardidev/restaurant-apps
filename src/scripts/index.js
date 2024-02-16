@@ -1,5 +1,5 @@
 import 'regenerator-runtime';
-import '../styles/responsive.scss';
+// import '../styles/responsive.scss';
 
 import './restaurant-cards';
 
@@ -11,6 +11,30 @@ import '@fortawesome/fontawesome-free/js/brands';
 import './components/navigation-bar';
 import './components/hero-section';
 import './components/footer-bar';
+import './components/header/header-bar';
+// import './components/footer/footer-bar';
+import './components/hero/hero';
+
+import '../styles/index.scss';
+import '../styles/responsive.scss';
+
+import App from './views/app';
+// import swRegister from './utils/sw-register';
+
+const app = new App({
+    button: document.querySelector('#menu'),
+    drawer: document.querySelector('#navigationDrawer'),
+    content: document.querySelector('#mainContent')
+});
+
+window.addEventListener('hashchange', () => {
+    app.renderPage();
+});
+
+window.addEventListener('load', () => {
+    app.renderPage();
+    // swRegister();
+});
 
 const menuButton = document.querySelector('#menu');
 const body = document.querySelector('body');
