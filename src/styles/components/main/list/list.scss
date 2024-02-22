@@ -1,0 +1,153 @@
+h2.section-title {
+  margin: 20px auto;
+  font-size: 20px;
+}
+
+resto-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+}
+resto-item.card {
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.25));
+  background: #ffffff;
+  border-radius: 15px;
+
+  img.img-card {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  div.text-card-wrapper {
+    margin: 20px;
+    div.card-description {
+      width: 100%;
+      div.card-upper {
+        display: flex;
+        justify-content: space-between;
+        p.resto-location {
+          font-weight: 300;
+          font-size: 15px;
+          line-height: 22px;
+          color: #b0b0b0;
+        }
+
+        div.rating {
+          .rating-icon {
+            color: #ffce31;
+            font-size: 16px;
+          }
+          .rating-value {
+            color: #152c5b;
+            font-size: 15px;
+          }
+        }
+      }
+      div.card-bottom {
+        p.resto-location {
+          font-weight: 300;
+          font-size: 15px;
+          line-height: 22px;
+          color: #b0b0b0;
+          padding: 8px 0px;
+        }
+        p.resto-description {
+          font-size: 12px;
+          line-height: 18px;
+          color: rgb(44, 44, 44);
+          text-align: justify;
+          display: -webkit-box;
+          -webkit-line-clamp: 6;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  resto-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  resto-item.card {
+    img.img-card {
+      height: 180px;
+    }
+    div.text-card-wrapper {
+      div.card-description {
+        div.card-upper {
+          p.resto-location {
+            font-size: 15px;
+          }
+
+          div.rating {
+            .rating-icon {
+              color: #ffce31;
+              font-size: 16px;
+            }
+            .rating-value {
+              color: #152c5b;
+              font-size: 16px;
+            }
+          }
+        }
+        div.card-bottom {
+          p.resto-location {
+            font-size: 15px;
+            padding: 8px 0px;
+          }
+          p.resto-description {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  h2.section-title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  resto-list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  resto-item.card {
+    img.img-card {
+      height: 180px;
+    }
+    div.text-card-wrapper {
+      div.card-description {
+        div.card-upper {
+          p.resto-location {
+            font-size: 15px;
+          }
+
+          div.rating {
+            .rating-icon {
+              font-size: 20px;
+            }
+            .rating-value {
+              font-size: 18px;
+            }
+          }
+        }
+        div.card-bottom {
+          p.resto-location {
+            font-size: 15px;
+            padding: 8px 0px;
+          }
+          p.resto-description {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -9,7 +9,7 @@ const List = {
             <hero-banner class="hero"></hero-banner>
             <div class='container' id='main-content'>
                 <div id='content'>
-                    <h2 class="section-title mt-60">Restaurant Recomendations</h2>
+                    <h2 class="section-title mt-60">Restaurants</h2>
                     <div class="main">
                         <resto-list></resto-list>
                     </div>

@@ -8,9 +8,6 @@ module.exports = {
   entry: {
     app: path.resolve(__dirname, 'src/scripts/index.js'),
   },
-  pwa: {
-    dest: 'public',
-  },
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
@@ -21,9 +18,9 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-            'style-loader', // Creates style nodes from JS strings
-            'css-loader',   // Translates CSS into CommonJS
-            'sass-loader'   // Compiles Sass to CSS
+            'style-loader',
+            'css-loader',
+            'sass-loader'
         ]
     }
     ],
@@ -41,9 +38,6 @@ module.exports = {
         },
       ],
     }),
-    // new WorkboxWebpackPlugin.GenerateSW({
-    //   swDest: path.resolve(__dirname, 'src/scripts/sw.js')
-    // }),
     new WorkboxWebpackPlugin.GenerateSW({
       swDest: './sw.bundle.js',
     }),

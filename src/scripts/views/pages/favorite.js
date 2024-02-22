@@ -20,9 +20,6 @@ const Favorite = {
 
   async afterRender() {
     const restaurants = await FavoriteRestoIdb.getAllRestaurants();
-
-    // const restaurantContainer = document.getElementById('restaurant-list');
-
     createElementlist("resto-list", restaurants);
   },
 };

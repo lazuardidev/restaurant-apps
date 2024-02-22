@@ -1,5 +1,4 @@
 import API_ENDPOINT from '../../../globals/api-endpoint';
-import '../category/category';
 
 class ContentInfo extends HTMLElement {
     set contentInfo(content) {
