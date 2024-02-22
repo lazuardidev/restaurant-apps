@@ -10,7 +10,6 @@ import './components/footer/footer-bar';
 import './components/hero/hero';
 
 import '../styles/index.scss';
-// import '../styles/responsive.scss';
 
 import App from './views/app';
 import swRegister from './utils/sw-register';
