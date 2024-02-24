@@ -20,7 +20,20 @@ const Favorite = {
 
   async afterRender() {
     const restaurants = await FavoriteRestoIdb.getAllRestaurants();
-    createElementlist("resto-list", restaurants);
+    if (restaurants.length > 0) {
+      createElementlist("resto-list", restaurants);
+    } else {
+      this.renderEmpty();
+    }
+  },
+
+  renderEmpty() {
+    const restaurantContainer = document.querySelector("resto-list");
+    restaurantContainer.innerHTML = `
+      <div class="empty-restaurant-list">
+        <p>Not Found</p>
+      </div>
+    `;
   },
 };
 
