@@ -12,8 +12,8 @@ class RestoItem extends HTMLElement {
         <div class="card" tabindex="0">
             <a href="#/detail/${this._resto.id}"/>
 			<img
-				class="img-card"
-                src="${API_ENDPOINT.IMAGE_SMALL(this._resto.pictureId)}"
+				class="img-card lazyload"
+                data-src="${API_ENDPOINT.IMAGE_SMALL(this._resto.pictureId)}"
                 alt="${this._resto.name} Restaurant Image"
 				loading="lazy" 
                 tabindex="0"

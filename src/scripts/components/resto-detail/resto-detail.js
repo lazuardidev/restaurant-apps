@@ -13,7 +13,7 @@ class RestoDetail extends HTMLElement {
             <div class="section-top-detail">
                 <div class="background-wrapper">
                     <div class="gradient"></div>
-                    <img src="./images/heros/hero-image_4.jpg" alt="Hero Image" loading="lazy" />
+                    <img class="lazyload" data-src="./images/heros/hero-image_4.jpg" alt="Hero Image" loading="lazy" />
                 </div>
                 <content-info></content-info>
             </div>

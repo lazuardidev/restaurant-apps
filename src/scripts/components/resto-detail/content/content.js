@@ -11,7 +11,8 @@ class ContentInfo extends HTMLElement {
         <div class="content">
             <div class="resto-image">
                 <img
-                    src="${API_ENDPOINT.IMAGE_SMALL(
+                    class="lazyload"
+                    data-src="${API_ENDPOINT.IMAGE_SMALL(
                         this._contentInfo.pictureId
                     )}"
                     alt="Profile Image"

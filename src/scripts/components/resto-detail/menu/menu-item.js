@@ -12,7 +12,8 @@ class MenuItem extends HTMLElement {
             <div>
                 <div class="image-wrapper">
                     <img
-                        src="https://source.unsplash.com/200x200?${tabSection} ${this._menuItem.name}"
+                        class="lazyload"
+                        data-src="https://source.unsplash.com/200x200?${tabSection} ${this._menuItem.name}"
                         alt="Menu ${this._menuItem.name} Image"
                     />
                 </div>

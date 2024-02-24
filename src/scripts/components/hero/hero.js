@@ -7,7 +7,15 @@ class Hero extends HTMLElement {
     this.innerHTML = `
 		<div class="hero">
 			<div class="img-wrapper">
-				<img src="./images/heros/hero-image_4.jpg" alt="Hero Image" loading="lazy" />
+				<picture>
+					<source media="(max-width: 425px)" srcset="./images/hero-image_4-small.jpg">
+				 	<source media="(max-width: 768px)" srcset="./images/hero-image_4-large.jpg">
+					<img
+						class="lazyload" 
+						src="./images/heros/hero-image_4.jpg"
+						alt="Hero Image" 
+					/>
+				</picture>
 				<div class="text-wrapper container">
 					<div class="text">
 					<h1>
