@@ -22,7 +22,7 @@ class HeaderBar extends HTMLElement {
           <div class="nav-brand">
             <div class="header_inner">
               <a class="header_title color-primary" href="#" tabindex="1">
-                Restoo
+                Restaurant
               </a>
             </div>
           </div>
